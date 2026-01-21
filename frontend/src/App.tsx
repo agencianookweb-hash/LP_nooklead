@@ -1,21 +1,25 @@
-﻿import { useState } from 'react'
+﻿import React from 'react'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import Footer from './components/Footer'
+import ParticleBackground from './components/ParticleBackground'
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <main className="container mx-auto px-4 py-16">
-        <div className="glass-card p-8 max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-4 text-gradient-green">
-            Nooklead
-          </h1>
-          <p className="text-text-secondary text-lg mb-8">
-            Landing Page desenvolvida com React + Vite + Tailwind CSS
-          </p>
-          <button className="btn-primary">
-            ComeÃ§ar Agora
-          </button>
-        </div>
-      </main>
+    <div className="min-h-screen dark:bg-izai-dark bg-white relative overflow-x-hidden">
+      <ParticleBackground />
+      
+      <div className="relative z-10">
+        <Hero 
+          title="Nooklead"
+          subtitle="Sua AgÃªncia Digital"
+          description="Transformamos ideias em realidade digital. Desenvolvimento, design e estratÃ©gia em um sÃ³ lugar."
+          ctaPrimaryText="ComeÃ§ar Agora"
+          ctaSecondaryText="Ver Recursos"
+        />
+        <Features />
+        <Footer />
+      </div>
     </div>
   )
 }

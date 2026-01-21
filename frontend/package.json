@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "lp-nooklead-frontend",
   "private": true,
   "version": "0.0.1",
@@ -10,12 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
+    "framer-motion": "^12.28.1",
+    "lucide-react": "^0.294.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
-    "clsx": "^2.0.0",
-    "tailwind-merge": "^2.0.0",
-    "lucide-react": "^0.294.0"
+    "tailwind-merge": "^2.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
